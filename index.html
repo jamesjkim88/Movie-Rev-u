@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MovieRev'u</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href  ="css/normalize.css" rel="stylesheet" media="screen">
+    <link href="css/foundation.css" rel="stylesheet" media="screen">
+    <link href="foundation-icons/foundation-icons.css" rel="stylesheet" media="screen">
+	<link rel = "stylesheet" type = "text/css" href = "movie.css"
+</head>
+<body>
+<!-- NAV BAR -->
+	<div class="contain-to-grid fixed nav-bar">    
+	    <nav class="top-bar" data-topbar role = "navigation">
+	        <ul class="title-area">
+	            <li class="name">
+	                <h1>
+	                    <a href="#">MovieRev'u</a>
+	                </h1>
+	            </li>
+	        </ul>
+	        <section class="top-bar-section">
+	            <ul class="right" id = "nav-links">
+					<li class="has-form">
+					  <div class="row collapse">
+					    <div class="large-8 small-8 columns">
+					      <input type="text" class = "value" placeholder="Look for Movies">
+					    </div>
+					    <div class="large-4 small-3 columns">
+					      <a href="#" class="alert button expand">Search</a>
+					    </div>
+					  </div>
+					</li>
+	            </ul>
+	        </section>
+	    </nav>
+	</div>
+<!-- END OF NAV BAR -->
+
+<!-- HEADER -->
+        <div class = "row orbit-row">
+            <div class = "large-12 columns" data-orbit data-options="pause_on_hover:false; timer_speed:5000; animation_speed: 800;">
+                <div> 
+                <div class = "caption"><p>Ant-Man</p></div>  
+                    <div class="push-1 buttons">
+                        <ul class="button-group">
+							<li><a href="#" class="small button radius">View Trailer</a></li>
+							<li><a href="#" class="small button radius">Read Reviews</a></li>
+						</ul>
+					</div>              
+                    <div class = "orbit-img">
+                        <img src="http://static2.hypable.com/wp-content/uploads/2015/07/antman-paul-rudd-jpg.jpg">
+                    </div>
+                </div>
+				<div>
+					<div class = "caption"><p>Minions</p></div>  
+                    <div class="push-1 buttons">
+                        <ul class="button-group">
+							<li><a href="#" class="small button radius">View Trailer</a></li>
+							<li><a href="#" class="small button radius">Read Reviews</a></li>
+						</ul>
+                    </div>
+                    <div class = "orbit-img">
+                        <img src = "http://blogs-images.forbes.com/erikkain/files/2015/07/orlando.jpg">
+                    </div>
+				</div>
+                <div>
+                	<div class = "caption"><p>TrainWreck</p></div>  
+                    <div class="push-1 buttons">
+                        <ul class="button-group">
+							<li><a href="#" class="small button radius">View Trailer</a></li>
+							<li><a href="#" class="small button radius">Read Reviews</a></li>
+						</ul>
+                    </div>
+                    <div class = "orbit-img">
+                        <img src = "http://a.abcnews.com/images/Entertainment/HT_trainwreck_still_mm_150717_16x9_992.jpg">
+                    </div>
+
+                </div>
+				<div>
+					<div class = "caption"><p>Inside Out</p></div>  
+                    <div class="push-1 buttons">
+                        <ul class="button-group">
+							<li><a href="#" class="small button radius">View Trailer</a></li>
+							<li><a href="#" class="small button radius">Read Reviews</a></li>
+						</ul>
+                    </div>
+                    <div class = "orbit-img">
+                        <img src = "http://posterposse.com/wp-content/uploads/2015/06/1422842928997.jpeg">
+                    </div>
+
+                </div>
+                <div>
+                	<div class = "caption"><p>Jurrassic World</p></div>  
+                    <div class="push-1 buttons">
+                        <ul class="button-group">
+							<li><a href="#" class="small button radius">View Trailer</a></li>
+							<li><a href="#" class="small button radius">Read Reviews</a></li>
+						</ul>
+                    </div>
+                    <div class = "orbit-img">
+                        <img src = "http://www.blastr.com/sites/blastr/files/jworldrexbig-jurassic-world-hunt-indominus-rex.jpeg">
+                    </div>
+				</div>
+            </div>
+        </div>
+<!-- END OF HEADER -->
+
+<!-- TOP 5 SELECTIONS -->
+	<div class = "row top-5 first-content">
+		<div class = "large-3 columns">
+			<h5>Top 5 Most Recent <br> Rev's</h5>
+			<ol id = "order-1">
+
+			</ol>
+		</div>
+		<div class = "large-3 columns">
+			<h5>Top 5 Most Critics <br> Pick</h5>
+			<ol id = "order-2">
+
+			</ol>
+		</div>
+		<div class = "large-3 columns">
+			<h5>Top 5 Most Dvd/Blu-Ray Picks</h5>
+			<ol id = "order-3">
+
+			</ol>
+		</div>
+		<div class = "large-3 columns">
+			<h5>Top 5 of NyTimes Top <br> 1000</h5>
+			<ol id = "order-4">
+				
+			</ol>
+		</div>
+	</div>
+<!-- END OF TOP 5 SELECTIONS -->
+
+<!-- ARTICLES -->
+	<div class = "row articles">
+        <div class = "medium-5 column main-article">
+
+
+            <p id = "main-art-summary">
+
+            </p>
+        </div>
+        <div class = "medium-4 column hide-for-small pair-articles">
+			<div id = "topArt">
+
+	        </div>
+				<div id = "bottomArt">
+
+	            </div>
+        </div>
+         <div class = "medium-3 column hide-for-small articles-trailers">
+            <h5>Read the Latest Articles</h5>
+            <ul class = "article-list">
+
+			</ul>
+			<h5>Watch Some Trailers</h5>
+            <ul class = "trailer-list">
+
+			</ul>
+        </div>               
+    </div>
+<!-- END OF ARTICLES -->
+
+<!-- SECOND TOP 5 SELECTIONS -->
+	<div class = "row last-content">
+		<div class = "large-5 columns as">
+			<h5>Five Random Oldies but <br> Goodies</h5>
+			<ol class = "left orderl" id =  "classics">
+
+			</ol>
+		</div>
+		<div class = "large-4 columns sd">
+			<h5>Top 5 Random Flicks to <br> Watch</h5>
+			<ol id =  "random-five">
+
+			</ol>
+		</div>
+		<div class = "large-3 columns df">
+			<h5>Read more about <br> Rev'uErs</h5>
+			<ol id =  "reviewers">
+
+			</ol>
+		</div>
+	</div>
+<!-- END OF SECOND TOP 5 SELECTION -->
+
+<!-- FOOTER -->
+	<footer>
+		<div class = "row">			
+			<div class = "large-3 columns about-us">
+				<h5>About MovieRev'u</h5>
+				<p>Movie Rev'u is here to provide you reviews of the Movies you desire to search. You can search by typing in the Movie, Published Date, Actor/Actress, Director, and more.  You can also catch up on reading the latest reviews on movies that are out Theatre and or DVD/Blu-Ray!</p>
+				
+			</div>
+			<div class = "large-4 push-1 columns social-media">
+				<h5>Facebook Instagram Twiiter NyTimes<h5>
+			</div>
+			<div class = "large-3 columns power-up">
+				<h5>Powered by NyTimes Movie Review API<h5>
+			</div>	
+		</div>
+		</div>
+
+	</footer>
+
+
+<script src="js/jquery.js"></script>
+<script src = "movie.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/modernizr.js"></script>
+
+<script>
+$(document).foundation();
+</script>
+</body>
+</html>
