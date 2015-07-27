@@ -1,0 +1,193 @@
+/*
+CSS for Movie Rev'u
+*/
+
+/********
+UNIVERSAL
+********/
+
+body{
+	background-color: #f3f3f3;
+	margin: 0;
+	max-width: 100%;
+}
+
+ul{
+	list-style-type: none;
+}
+
+/********
+HEADER
+********/
+
+.orbit-row{
+	max-height: 300px;
+}
+
+.orbit-container{
+	max-height: 300px;
+}
+
+.orbit-img img{
+	height: 300px;
+	width: 100%;
+}
+
+.orbit-img{
+	max-height: 300px;
+}
+
+.buttons{
+	position: absolute;
+	margin-top: 20%;
+}
+
+.orbit-slide-number{
+	display: none;
+}
+
+.caption{
+	background-color: rgba(51, 51, 51, 0.8);
+	color: white;
+	height: 30px;
+	position: absolute;
+	width: 25%;
+}
+
+.caption p{
+	padding-left: 15px;
+}
+
+/********
+FIRST TOP-5
+********/
+
+.first-content{
+	padding-top: 10px;
+	margin-top: 25px;
+}
+
+.top-5{
+	background-color: white;
+}
+
+.moviedesc{
+	background-color: red;
+	font-size: 12px;
+	width: 60%;
+	float: right;
+}
+
+.no-image{
+	height: 70px;
+	width: 70px;
+	font-size: 12px;
+}
+
+.no-image p{
+	font-size: 12px;
+}
+
+#wtf{
+	width: 100%;
+}
+
+/********
+ARTICLES & TRAILERS
+********/
+
+.articles{
+	margin-top: 25px;
+}
+
+.articles-trailers{
+	text-align: center;
+}
+
+#topArt{
+	padding-bottom: 28px;
+}
+
+.summary{
+	font-size: 14.5px;
+}
+
+#bottomArt-summary{
+	padding-left: 100px;
+}
+
+#topArt img{
+	float: right;
+}
+
+#bottomArt img{
+	float: left;
+}
+
+/********
+SECOND TOP-5
+********/
+
+.orderList{
+	height: 110px;
+}
+
+.last-content{
+	background: white;
+	padding-top: 10px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.food-img{
+	padding: 25px 0;
+}
+
+/********
+FOOTER
+********/
+
+footer{
+	background-color: #333;
+	text-align: center;
+}
+
+footer h5{
+	color: #fff;
+}
+
+footer p{
+	color: #fff;
+	font-size: 14px;
+}
+
+.social-media{
+	border-right: 2px solid white;
+	border-left: 2px solid white;
+	margin-top: 45px;
+	padding-top: 4%;
+	padding-bottom: 6%;
+	width: 40%;
+}
+
+.about-us{
+	padding: 2% 0;
+	
+}
+
+.power-up{
+	padding: 5% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
