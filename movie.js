@@ -33,7 +33,9 @@ FIRST TOP 5 SELECTIONS
 			html += "<img src =";
 			html += data.results[i].multimedia.resource.src;
 			html += ">";
-			html += "<p class = 'moviedesc'>" + data.results[i].sort_name + "</p>"; 
+			html += "<p class = 'moviedesc'><a class = 'links' href =" + data.results[i].link.url;
+			html += ">"
+			html += data.results[i].sort_name + "</a></p>"; 
 			html += '</li>';
 			$("#order-1").append(html);
 		};
@@ -45,7 +47,9 @@ FIRST TOP 5 SELECTIONS
 			html += "<img src =";
 			html += data.results[i].multimedia.resource.src;
 			html += ">";
-			html += "<p class = 'moviedesc'>" + data.results[i].sort_name + "</p>"; 
+			html += "<p class = 'moviedesc'><a class = 'links' href =" + data.results[i].link.url;
+			html += ">"
+			html += data.results[i].sort_name + "</a></p>"; 
 			html += '</li>';
 			$("#order-2").append(html);
 		};
@@ -57,12 +61,16 @@ FIRST TOP 5 SELECTIONS
 				thisas += "<img src =";
 				thisas += data.results[i].multimedia.resource.src;
 				thisas += ">";
-				thisas += "<p class = 'moviedesc'>" + data.results[i].sort_name + "</p>"; 
+				thisas += "<p class = 'moviedesc'><a href =" + data.results[i].link.url;
+				thisas += ">"
+				thisas += data.results[i].sort_name + "</a></p>"; 
 				thisas += '</li>';
 				$("#order-3").append(thisas);		
 			};
 			var html = '<li id = "wtf">';
-			html += "<p class = 'moviedesc'>" + data.results[4].sort_name + "</p>";
+			html += "<p class = 'moviedesc'><a href =" + data.results[i].link.url;
+			html += ">" 
+			html += data.results[4].sort_name + "</a></p>";
 			html += "<div class = 'no-image'>"
 			html += "<p>*Thumbnail not Avaialble*</p>"
 			html += "</div>"
@@ -73,7 +81,9 @@ FIRST TOP 5 SELECTIONS
 	function printThisFor4(data){
 		for(var i = 0; i<5; i++){
 			var html = '<li id = "wtf">';
-			html += "<p class = 'moviedesc'>" + data.results[i].sort_name + "</p>";
+			html += "<p class = 'moviedesc'><a href =" + data.results[i].link.url; 
+			html += ">"
+			html += data.results[i].sort_name + "</a></p>";
 			html += "<div class = 'no-image'>"
 			html += "<p>*Thumbnail not Avaialble*</p>"
 			html += "</div>"
@@ -103,7 +113,9 @@ ARTICLES AND TRAILERS
         picture +=  "</a>";
         $(".main-article").append(picture);
 
-		var summary = data.results[0].summary_short;
+		var summary = '<p id = "main-art-summary">';
+		summary += data.results[0].summary_short;
+		summary += "</p>"
 		$(".main-article").append(summary);
 	};
 

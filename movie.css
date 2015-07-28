@@ -7,13 +7,48 @@ UNIVERSAL
 ********/
 
 body{
-	background-color: #f3f3f3;
+	background-color: #f0f0f0;
 	margin: 0;
 	max-width: 100%;
 }
 
 ul{
 	list-style-type: none;
+}
+
+h5{
+	color: #3f2860;
+	font-family: bitter;
+}
+
+/********
+NAV-BAR
+********/
+
+.nav-bar{
+	background: #ef6c00;
+}
+
+.top-bar{
+	background: #ef6c00;
+}
+
+
+.top-bar-section .has-form{
+	background-color: #de8642;
+}
+
+.name h1{
+	font-family: "Poiret One";
+	font-size: 1.5em;
+}
+
+.top-bar .name h1{
+	font-size: 1.5em;
+}
+
+input[type="text"]{
+	margin: 0 10em 1rem 0;
 }
 
 /********
@@ -67,12 +102,25 @@ FIRST TOP-5
 	margin-top: 25px;
 }
 
+.first-content ol li{
+	margin-top: 10px;
+}
+
+.first-content a{
+	color: #333;
+}
+
+.first-content a:hover{
+	border-bottom: 1px solid black;
+}
+
+
 .top-5{
 	background-color: white;
 }
 
 .moviedesc{
-	background-color: red;
+	color: #333;
 	font-size: 12px;
 	width: 60%;
 	float: right;
@@ -100,8 +148,31 @@ ARTICLES & TRAILERS
 	margin-top: 25px;
 }
 
+.articles h5 a{
+	color: #3f2860;
+}
+
+.articles p{
+	font-family: raleway;
+}
+
 .articles-trailers{
 	text-align: center;
+}
+
+.articles-trailers h5{
+	color: #3f2860;
+}
+
+.article-list li a{
+	color: black;
+	font-family: raleway;
+	text-decoration: none;
+}
+
+.trailer-list li a{
+	color: black;
+	font-family: raleway;
 }
 
 #topArt{
@@ -122,6 +193,10 @@ ARTICLES & TRAILERS
 
 #bottomArt img{
 	float: left;
+}
+
+.articles a:hover{
+	border-bottom: 1px solid black;
 }
 
 /********
