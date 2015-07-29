@@ -262,11 +262,22 @@ footer p{
 
 @media(max-width: 1024px){
 	.social-media{
+		border: none;
 		margin-left: 22%;
+	}
+	.moviedesc{
+		margin-right: 25%;
 	}
 }
 
-
+@media(max-width: 640px){
+	.social-media{
+		margin-left: 30%;
+	}
+	.moviedesc{
+		margin-right: 15%;
+	}
+}
 
 
 
