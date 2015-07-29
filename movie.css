@@ -35,7 +35,7 @@ NAV-BAR
 
 
 .top-bar-section .has-form{
-	background-color: #de8642;
+	background: #de8642;
 }
 
 .name h1{
@@ -45,6 +45,10 @@ NAV-BAR
 
 .top-bar .name h1{
 	font-size: 1.5em;
+}
+
+.has-form{
+	padding-right: 30px;
 }
 
 input[type="text"]{
@@ -124,7 +128,9 @@ FIRST TOP-5
 	font-size: 12px;
 	width: 60%;
 	float: right;
+	margin: 0;
 }
+
 
 .no-image{
 	height: 70px;
@@ -254,8 +260,11 @@ footer p{
 	padding: 5% 0;
 }
 
-
-
+@media(max-width: 1024px){
+	.social-media{
+		margin-left: 22%;
+	}
+}
 
 
 
