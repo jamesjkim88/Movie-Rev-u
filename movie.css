@@ -18,7 +18,10 @@ ul{
 
 h5{
 	color: #3f2860;
-	font-family: bitter;
+}
+
+li{
+	font-family: raleway;
 }
 
 /********
@@ -106,6 +109,10 @@ FIRST TOP-5
 	margin-top: 25px;
 }
 
+.first-content h5{
+	font-family: bitter;
+}
+
 .first-content ol li{
 	margin-top: 10px;
 }
@@ -125,7 +132,7 @@ FIRST TOP-5
 
 .moviedesc{
 	color: #333;
-	font-size: 12px;
+	font-size: 14px;
 	width: 60%;
 	float: right;
 	margin: 0;
@@ -152,6 +159,10 @@ ARTICLES & TRAILERS
 
 .articles{
 	margin-top: 25px;
+}
+
+.articles h5{
+	font-family: bitter;
 }
 
 .articles h5 a{
@@ -220,8 +231,20 @@ SECOND TOP-5
 	margin-bottom: 25px;
 }
 
+.last-content h5{
+	font-family: bitter;
+}
+
 .food-img{
 	padding: 25px 0;
+}
+
+.last-content a{
+	color: #333;
+}
+
+.last-content a:hover{
+	border-bottom: 1px solid black;
 }
 
 /********
@@ -259,6 +282,10 @@ footer p{
 .power-up{
 	padding: 5% 0;
 }
+
+/********
+MEDIA-QUERIES
+********/
 
 @media(max-width: 1024px){
 	.social-media{
