@@ -194,6 +194,9 @@ SECOND TOP 5 SELECTIONS
 			var randomIndex = Math.floor(Math.random()*20);
 			var random = data.results[randomIndex].sort_name;	
 			var html = "<li>";
+			html += "<a class = 'links' href =";
+			html += data.results[i].link.url;
+			html += ">"
 			html += random;
 			html += "</li>";
 			$("#classics").append(html);
@@ -203,11 +206,14 @@ SECOND TOP 5 SELECTIONS
 //print random 5 movies
 	function printRandom5(data){
 		for(var i = 0; i < 5; i++){
-			var randomIndex = Math.floor(Math.random()*19);
+			var randomIndex = Math.floor(Math.random()*20);
 			var random = data.results[randomIndex].sort_name;	
 			var html = "<li>";
+			html += "<a class = 'links' href =";
+			html += data.results[i].link.url;
+			html += ">"
 			html += random;
-			html += "</li>";
+			html += "</a></li>";
 			$("#random-five").append(html);
 		};
 	};
