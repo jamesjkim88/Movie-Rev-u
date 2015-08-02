@@ -3,7 +3,6 @@ JS for Movie Rev'u
 */
 
 $("document").ready(function(){
-	//var url[0] = "https://api.myjson.com/bins/2oofe"; //url for recent articles
 
 	var url = [
 			"https://api.myjson.com/bins/2oofe",
@@ -13,14 +12,7 @@ $("document").ready(function(){
 			"https://api.myjson.com/bins/41z4a",
 			"https://api.myjson.com/bins/1jydm"
 	];
-
-
-	// var url[1] = "https://api.myjson.com/bins/4yc8q"; //url for top 5 critics pick
-	// var url[2] = "https://api.myjson.com/bins/33w9m"; //url for top 5 dvd pick
-	// var url[3] = "https://api.myjson.com/bins/wlbu"; //url for top ny top 1000
-	//
-	// var url[4] = "https://api.myjson.com/bins/41z4a"; //url for top 5 classic
-	// var url[5] = "https://api.myjson.com/bins/1jydm"; //url for random 5
+	
 	var reviewers = "https://api.myjson.com/bins/56p62"; //random 5 reviewers
 
 /*********************
