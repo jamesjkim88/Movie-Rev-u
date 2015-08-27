@@ -3,13 +3,16 @@ JS for Movie Rev'u
 */
 
 $("document").ready(function(){
-	var mainSearchUrl = "https://api.myjson.com/bins/2oofe"; //url for recent articles
-	var url2 = "https://api.myjson.com/bins/4yc8q"; //url for top 5 critics pick
-	var url3 = "https://api.myjson.com/bins/33w9m"; //url for top 5 dvd pick
-	var url4 = "https://api.myjson.com/bins/wlbu"; //url for top ny top 1000
 
-	var url5 = "https://api.myjson.com/bins/41z4a"; //url for top 5 classic
-	var url6 = "https://api.myjson.com/bins/1jydm"; //url for random 5
+	var url = [
+			"https://api.myjson.com/bins/2oofe",
+			"https://api.myjson.com/bins/4yc8q",
+			"https://api.myjson.com/bins/33w9m",
+			"https://api.myjson.com/bins/wlbu",
+			"https://api.myjson.com/bins/41z4a",
+			"https://api.myjson.com/bins/1jydm"
+	];
+	
 	var reviewers = "https://api.myjson.com/bins/56p62"; //random 5 reviewers
 
 /*********************
@@ -35,7 +38,7 @@ FIRST TOP 5 SELECTIONS
 			html += ">";
 			html += "<p class = 'moviedesc'><a class = 'links' href =" + data.results[i].link.url;
 			html += ">"
-			html += data.results[i].sort_name + "</a></p>"; 
+			html += data.results[i].sort_name + "</a></p>";
 			html += '</li>';
 			$("#order-1").append(html);
 		};
@@ -49,7 +52,7 @@ FIRST TOP 5 SELECTIONS
 			html += ">";
 			html += "<p class = 'moviedesc'><a class = 'links' href =" + data.results[i].link.url;
 			html += ">"
-			html += data.results[i].sort_name + "</a></p>"; 
+			html += data.results[i].sort_name + "</a></p>";
 			html += '</li>';
 			$("#order-2").append(html);
 		};
@@ -63,13 +66,13 @@ FIRST TOP 5 SELECTIONS
 				thisas += ">";
 				thisas += "<p class = 'moviedesc'><a href =" + data.results[i].link.url;
 				thisas += ">"
-				thisas += data.results[i].sort_name + "</a></p>"; 
+				thisas += data.results[i].sort_name + "</a></p>";
 				thisas += '</li>';
-				$("#order-3").append(thisas);		
+				$("#order-3").append(thisas);
 			};
 			var html = '<li id = "wtf">';
 			html += "<p class = 'moviedesc'><a href =" + data.results[i].link.url;
-			html += ">" 
+			html += ">"
 			html += data.results[4].sort_name + "</a></p>";
 			html += "<div class = 'no-image'>"
 			html += "<p>*Thumbnail not Avaialble*</p>"
@@ -81,14 +84,14 @@ FIRST TOP 5 SELECTIONS
 	function printThisFor4(data){
 		for(var i = 0; i<5; i++){
 			var html = '<li id = "wtf">';
-			html += "<p class = 'moviedesc'><a href =" + data.results[i].link.url; 
+			html += "<p class = 'moviedesc'><a href =" + data.results[i].link.url;
 			html += ">"
 			html += data.results[i].sort_name + "</a></p>";
 			html += "<div class = 'no-image'>"
 			html += "<p>*Thumbnail not Avaialble*</p>"
 			html += "</div>"
 			html += '</li>';
-			$("#order-4").append(html);	
+			$("#order-4").append(html);
 			};
 	};
 
@@ -192,7 +195,7 @@ SECOND TOP 5 SELECTIONS
 	function printFiveClassics(data){
 		for(var i = 0; i < 5; i++){
 			var randomIndex = Math.floor(Math.random()*20);
-			var random = data.results[randomIndex].sort_name;	
+			var random = data.results[randomIndex].sort_name;
 			var html = "<li>";
 			html += "<a class = 'links' href =";
 			html += data.results[i].link.url;
@@ -207,7 +210,7 @@ SECOND TOP 5 SELECTIONS
 	function printRandom5(data){
 		for(var i = 0; i < 5; i++){
 			var randomIndex = Math.floor(Math.random()*20);
-			var random = data.results[randomIndex].sort_name;	
+			var random = data.results[randomIndex].sort_name;
 			var html = "<li>";
 			html += "<a class = 'links' href =";
 			html += data.results[i].link.url;
@@ -222,7 +225,7 @@ SECOND TOP 5 SELECTIONS
 	function printReviewers(data){
 		for(var i = 0; i < 5; i++){
 			var randomIndex = Math.floor(Math.random()*20);
-			var random = data.results[randomIndex].sort_name;	
+			var random = data.results[randomIndex].sort_name;
 			var html = "<li>";
 			html += random;
 			html += "</li>";
@@ -230,17 +233,17 @@ SECOND TOP 5 SELECTIONS
 		};
 	};
 
-	$.getJSON(mainSearchUrl, printThisFor1);
-	$.getJSON(url2, printThisFor2);
-	$.getJSON(url3, printThisFor3);
-	$.getJSON(url4, printThisFor4);
-	$.getJSON(url5, printFiveClassics);
-	$.getJSON(mainSearchUrl, printArticleLinks);
-	$.getJSON(mainSearchUrl, printTrailerLinks);
-	$.getJSON(mainSearchUrl, printMainArticle);
-	$.getJSON(mainSearchUrl, printMiniArticles1);
-	$.getJSON(mainSearchUrl, printMiniArticles2);
-	$.getJSON(url6, printRandom5);
+	$.getJSON(url[0], printThisFor1);
+	$.getJSON(url[1], printThisFor2);
+	$.getJSON(url[2], printThisFor3);
+	$.getJSON(url[3], printThisFor4);
+	$.getJSON(url[4], printFiveClassics);
+	$.getJSON(url[0], printArticleLinks);
+	$.getJSON(url[0], printTrailerLinks);
+	$.getJSON(url[0], printMainArticle);
+	$.getJSON(url[0], printMiniArticles1);
+	$.getJSON(url[0], printMiniArticles2);
+	$.getJSON(url[5], printRandom5);
 	$.getJSON(reviewers, printReviewers);
 });//end of ready function
 
@@ -257,17 +260,8 @@ OTHER USEFUL CODE
 // 		html += "<img src =";
 // 		html += data.results[i].multimedia.resource.src;
 // 		html += ">";
-// 		html += "<p class = 'moviedesc'>" + data.results[i].sort_name + "</p>"; 
+// 		html += "<p class = 'moviedesc'>" + data.results[i].sort_name + "</p>";
 // 		html += '</li>';
 // 		$("#order-1").append(html);
 // 	}
 // })
-
-
-
-
-
-
-
-
-
